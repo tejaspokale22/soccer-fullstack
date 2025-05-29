@@ -112,7 +112,7 @@ Returns upcoming soccer matches on the specified date.
 
 ## Contact
 
-For issues or questions, please contact: [your-email@example.com](mailto:your-email@example.com)
+For issues or questions, please contact: [tejaspokale22@gmail.com](mailto:tejaspokale22@gmail.com)
 
 ---
 
