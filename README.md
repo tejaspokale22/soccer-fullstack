@@ -93,6 +93,75 @@ A simple MERN stack application that displays upcoming soccer matches by date us
 
 ---
 
+## API Endpoints
+
+### Backend API
+
+#### Fetch Matches by Date
+
+* **Endpoint:**
+
+  ```
+  GET /api/matches?date=YYYY-MM-DD
+  ```
+
+* **Query Parameters:**
+
+  | Parameter | Type   | Required | Description                            |
+  | --------- | ------ | -------- | -------------------------------------- |
+  | date      | string | Yes      | Date of matches in `YYYY-MM-DD` format |
+
+* **Example Request:**
+
+  ```
+  GET https://soccer-fullstack.onrender.com/api/matches?date=2025-05-30
+  ```
+
+* **Response:**
+
+  Returns a JSON array of matches scheduled on the given date with details such as teams, venue, league, and status.
+
+---
+
+### Original API Endpoint (RapidAPI Football API)
+
+#### Fetch Fixtures by Date
+
+* **Endpoint:**
+
+  ```
+  GET /v3/fixtures?date=YYYY-MM-DD
+  ```
+
+* **Base URL:**
+
+  ```
+  https://api-football-v1.p.rapidapi.com
+  ```
+
+* **Full Example Request:**
+
+  ```
+  GET https://api-football-v1.p.rapidapi.com/v3/fixtures?date=2025-05-30
+  ```
+
+* **Headers:**
+
+  | Header          | Value                          |
+  | --------------- | ------------------------------ |
+  | X-RapidAPI-Key  | your\_rapidapi\_key\_here      |
+  | X-RapidAPI-Host | api-football-v1.p.rapidapi.com |
+
+* **Description:**
+
+  This API fetches soccer fixtures (matches) for the specified date, including details like teams, league, venue, and status.
+
+* **Documentation:**
+
+  [https://rapidapi.com/api-sports/api/api-football](https://rapidapi.com/api-sports/api/api-football)
+
+---
+
 ## Deployment
 
 * Backend deployed on Render: [https://soccer-fullstack.onrender.com/](https://soccer-fullstack.onrender.com/)
@@ -102,17 +171,9 @@ Update frontend API base URL to use the backend deployed URL before deployment.
 
 ---
 
-## API Endpoint
-
-* `GET /api/matches?date=YYYY-MM-DD`
-
-Returns upcoming soccer matches on the specified date.
-
----
-
 ## Contact
 
-For issues or questions, please contact: [tejaspokale22@gmail.com](mailto:tejaspokale22@gmail.com)
+For issues or questions, please contact: [your-email@example.com](mailto:your-email@example.com)
 
 ---
 
@@ -121,8 +182,4 @@ For issues or questions, please contact: [tejaspokale22@gmail.com](mailto:tejasp
 MIT License
 
 ```
-
----
-
-Let me know if you want me to generate a README with deployment instructions for Vercel frontend or anything else!
 ```
