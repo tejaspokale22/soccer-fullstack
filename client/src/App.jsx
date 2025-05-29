@@ -32,7 +32,7 @@ const App = () => {
   const fetchMatches = async (selectedDate) => {
     try {
       setLoading(true);
-      const res = await axios.get(`http://localhost:5000/api/matches?date=${selectedDate}`);
+      const res = await axios.get(`https://soccer-fullstack.onrender.com/api/matches?date=${selectedDate}`);
       setMatches(res.data.response);
       setCurrentPage(1); // Reset to first page when date changes
       setLoading(false);
